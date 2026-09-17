@@ -16,7 +16,7 @@
 // Vercel uses by default) is enough, so this file has zero dependencies.
 // ============================================================================
 
-const GROQ_MODEL = "llama-3.1-8b-instant"; // fast + free Groq model
+const GROQ_MODEL = "openai/gpt-oss-120b"; // fast + free Groq model
 
 const SYSTEM_PROMPT = `
 You are a friendly assistant embedded on the portfolio website of Syeda
