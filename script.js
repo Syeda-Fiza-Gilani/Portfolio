@@ -142,7 +142,6 @@ function pickNaturalVoice() {
   // Preference order: well-known natural-sounding English voices first,
   // then any English voice, then whatever the browser has by default.
   const preferredNames = [
-    "Google UK English Female",
     "Microsoft Aria Online (Natural)",
     "Microsoft Jenny Online (Natural)",
     "Samantha", // macOS/iOS
