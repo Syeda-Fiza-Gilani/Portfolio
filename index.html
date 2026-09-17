@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syeda Fiza Gilani — AI-Native Full-Stack Engineer</title>
+  <meta name="description" content="Portfolio of Syeda Fiza Gilani (Pixel-Quark) — AI-native full-stack engineer building memory-efficient backends, vector search systems, and human-in-the-loop automation." />
+
+  <!-- Google Fonts (loaded async via preconnect, tiny weight subset only — safe for low-spec machines) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__mark">SFG</a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__text">
+        <p class="hero__kicker">AI-native full-stack engineer &amp; RevOps architect</p>
+        <h1 class="hero__headline">
+          I build AI systems<br />
+          that don't <em>break</em> under scale.
+        </h1>
+        <p class="hero__lede">
+          I'm Syeda Fiza Gilani. I bridge raw
+          LLM capability with production full-stack apps and enterprise
+          revenue operations: memory-efficient backends, vector search, and
+          human-in-the-loop automation for messy, unstructured data.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">See the work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero__portrait">
+        <!-- Pulse rings: pure CSS, GPU-friendly (transform + opacity only) -->
+        <div class="pulse">
+          <span class="pulse__ring"></span>
+          <span class="pulse__ring"></span>
+          <span class="pulse__ring"></span>
+        </div>
+        <!-- Replace src with your own photo. A square image, 600x600px or larger, works best. -->
+        <img
+          class="hero__photo"
+          src="ChatGPT Image Sep 15, 2026, 04_30_45 PM.png"
+          alt="Portrait of Syeda Fiza Gilani"
+          width="320"
+          height="320"
+          loading="eager"
+        />
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="about__body">
+        <h2 class="section-title">A little about how I work</h2>
+        <p>
+          I came into full-stack AI engineering from IT infrastructure and
+          visual workflow automation — I'm Google IT Support Certified, and
+          that background shows up in how I build: I care about what happens
+          when the system is under memory pressure, not just when the demo
+          works.
+        </p>
+        <p>
+          My local development environment is deliberately constrained
+          (4GB RAM, spinning HDDs), so I design around that reality rather
+          than against it — offloading heavy parsing to cloud APIs, using
+          memory-safe chunking, and rejecting unnecessary local compute
+          bloat. I'm working toward contributing to Google Summer of Code
+          2027 and remote engineering roles at developer-first companies
+          like GitLab, Automattic, PostHog, and Canonical.
+        </p>
+      </div>
+
+      <aside class="about__stats">
+        <div class="stat">
+          <span class="stat__value">Google IT Support</span>
+          <span class="stat__label">certified, infrastructure background</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">3</span>
+          <span class="stat__label">featured case studies below</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">FastAPI · Next.js</span>
+          <span class="stat__label">Qdrant · Supabase · Gemini · n8n</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="work" id="work">
+      <h2 class="section-title">Selected work</h2>
+
+      <div class="work__grid">
+        <article class="project project--feature">
+          <div class="project__info">
+            <h3>DocMorph AI</h3>
+            <p>Intelligent document processing and OCR pipeline. A decoupled monorepo — React client, Node/Express server — built after standard OCR scripts kept crashing on large, multi-page scanned PDFs. Memory-safe text chunking breaks documents into sequential streams instead of loading them whole, and the drag-and-drop UI shows real conversion states from upload through OCR to a finished .docx.</p>
+            <span class="project__tags">React · Node.js · Tesseract OCR</span>
+          </div>
+          <a class="project__link" href="https://github.com/Pixel-Quark/docmorph-ai" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+
+        <article class="project">
+          <h3>"Zero-Risk" VIP Support HITL Engine</h3>
+          <p>An enterprise sentiment and human-in-the-loop escalation pipeline. Incoming tickets are checked against HubSpot for account tier, routed through Gemini for sentiment analysis and a drafted reply, then held at an n8n Wait node — nothing goes out to a VIP client until a human clicks "Approve &amp; Send" on the Slack alert.</p>
+          <span class="project__tags">n8n · Gemini · HubSpot · Slack</span>
+        </article>
+
+        <article class="project">
+          <h3>Autonomous Web &amp; Social Media Crawler</h3>
+          <p>A resilient data scraper for lead enrichment, built to avoid the CPU/RAM cost of DOM-heavy tools like Selenium. Pages are converted to markdown in the cloud, then a strict JSON schema parser on Gemini extracts fields like LinkedIn and Twitter URLs straight into Google Sheets and HubSpot.</p>
+          <span class="project__tags">n8n · Gemini · Firecrawl</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact__lede">
+        The fastest way to reach me is email. I usually reply within a day or two.
+      </p>
+      <!-- Replace with your real email address -->
+      <a class="contact__email" href="mailto:hello@pixelquark.dev">hello@pixelquark.dev</a>
+
+      <div class="contact__socials">
+        <a href="https://github.com/Pixel-Quark" target="_blank" rel="noopener">GitHub</a>
+        <!-- Replace these with your real LinkedIn / X profile URLs -->
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Syeda Fiza Gilani. Built with plain HTML, CSS, and JS.</p>
+  </footer>
+
+  <!-- ============ AI CHAT WIDGET ============ -->
+  <!-- Custom chat UI (Path B), powered by the free Groq API tier, with voice replies via the -->
+  <!-- browser's native Web Speech API. No frameworks, no build step, no server required. -->
+  <div class="chat" id="chat">
+    <!-- The rings here are dormant by default. script.js adds "is-speaking" to -->
+    <!-- this wrapper for the duration of each spoken reply, which is the only -->
+    <!-- thing that starts the ripple animation. -->
+    <div class="chat__orb" id="chatOrb">
+      <span class="chat__ring"></span>
+      <span class="chat__ring"></span>
+      <span class="chat__ring"></span>
+      <button class="chat__toggle" id="chatToggle" aria-expanded="false" aria-controls="chatPanel" aria-label="Open chat assistant">
+        <svg class="chat__icon chat__icon--open" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+          <path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H8l-4 4V5a1 1 0 0 1 1-1Z"/>
+        </svg>
+        <svg class="chat__icon chat__icon--close" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path fill="currentColor" d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="chat__panel" id="chatPanel" role="dialog" aria-label="Chat with Fiza's assistant" hidden>
+      <header class="chat__header">
+        <div>
+          <p class="chat__title">Ask me anything</p>
+          <p class="chat__subtitle" id="chatStatus">Voice replies on</p>
+        </div>
+        <button class="chat__mute" id="chatMute" type="button" aria-pressed="false" title="Toggle spoken replies">🔊</button>
+      </header>
+
+      <div class="chat__messages" id="chatMessages" aria-live="polite">
+        <div class="msg msg--bot">
+          Hi! I'm a small assistant standing in for Syeda Fiza Gilani. Ask me about the projects, the stack used here, or how to get in touch.
+        </div>
+      </div>
+
+      <form class="chat__form" id="chatForm">
+        <input
+          type="text"
+          id="chatInput"
+          class="chat__input"
+          placeholder="Type a message…"
+          autocomplete="off"
+          aria-label="Type a message"
+        />
+        <button type="submit" class="chat__send" aria-label="Send message">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Local script -->
+  <script src="script.js"></script>
+</body>
+</html>

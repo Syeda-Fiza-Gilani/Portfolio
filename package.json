@@ -1,0 +1,9 @@
+{
+  "name": "alex-rivera-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Single-page portfolio with a Groq-powered chat assistant, deployed on Vercel.",
+  "engines": {
+    "node": ">=18"
+  }
+}
